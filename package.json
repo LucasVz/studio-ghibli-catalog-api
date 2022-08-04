@@ -5,7 +5,9 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "npx nodemon src/app.ts"
+    "dev": "npx nodemon src/app.ts",
+    "build": "tsc",
+	  "start": "node dist/app.js"
   },
   "repository": {
     "type": "git",
