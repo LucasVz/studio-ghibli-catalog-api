@@ -3,12 +3,13 @@ import express, { json } from "express";
 
 import filmsRouter from "./routes/filmsRouter.js";
 
-const app = express();
+export const app = express();
 app.use(json());
-app.use(cors());
+app.use(
+  cors({
+    credentials: true,
+    origin: ["https://studio-ghibli-catalog.vercel.app", "http://localhost:3000"],
+  })
+);
 app.use(filmsRouter);
 
-const PORT = process.env.PORT || 4000;
-app.listen(PORT, () => {
-  console.log("Running on " + PORT);
-});
