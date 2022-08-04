@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx nodemon src/app.ts",
-    "build": "ttsc -p tsconfig.build.json",
+    "build": "tsc",
 	  "start": "node dist/app.js"
   },
   "repository": {
