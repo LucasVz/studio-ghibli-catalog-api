@@ -42,6 +42,8 @@ npx prisma migrate dev
 npm run dev
 ```
 
+Documentação: https://app.swaggerhub.com/apis-docs/LucasVz/studio-ghibli-catalog-api/1.0.0
+
 Acesse o layout da Api:https://github.com/LucasVz/studio-ghibli-catalog
 
 Acesse online: https://studio-ghibli-catalog.vercel.app/
